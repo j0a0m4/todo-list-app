@@ -1,0 +1,61 @@
+:root {
+    --grey: rgb(110, 110, 110);
+    --black: rgb(24, 24, 24);
+    --muted-black: rgba(0,0,0, 0.1);
+}
+body {
+    height: 93vh;
+    width: 100vw;
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+    text-transform: uppercase;
+    min-height: 60px;
+}
+li {
+    min-height: 40px;
+}
+li:nth-child(2n) {
+    background-color: var(--muted-black);
+}
+
+li:last-of-type {
+    border-bottom: 0px !important;
+}
+li:hover .delete {
+    opacity: 1;
+}
+
+input {
+    display: none;
+}
+.container {
+    width: 360px;
+    box-shadow: 0 0 3px var(--muted-black);
+}
+.completed {
+    color: var(--grey);
+    text-decoration: line-through;
+}
+.delete {
+    color: rgb(24, 24, 24) !important;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+.inputDisplay {
+    display: flex;
+    transition: 2s;
+}
+
+#todoInput {
+    background-color: var(--muted-black);
+    min-height: 40px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+#todoInput:focus {
+    outline: 1px solid rgb(226, 195, 18);
+}

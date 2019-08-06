@@ -32,7 +32,7 @@ const createNewTodo = (todo) => {
     // remove icon
     const removeIcon = ' <span class="delete"><span class="icon"><i class="far fa-trash-alt"></i></span></span>';
     // create a new li and add to #list(ul)
-    const newTodo = '<li class="border border-primary border-top-0 border-left-0 border-right-0 d-flex justify-content-between align-items-center pr-2 pl-2">' + todoText + " " + removeIcon + '</li>';
+    const newTodo = '<li class="border-top-0 border-left-0 border-right-0 d-flex justify-content-between align-items-center pr-2 pl-2">' + todoText + " " + removeIcon + '</li>';
     $("#list").append(newTodo);
 }
 // Toggle input display

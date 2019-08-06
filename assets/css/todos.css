@@ -3,30 +3,28 @@
     --black: rgb(24, 24, 24);
     --muted-black: rgba(0,0,0, 0.1);
 }
+
 body {
     height: 93vh;
     width: 100vw;
-background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 h1 {
     text-transform: uppercase;
     min-height: 60px;
 }
+
 li {
     min-height: 40px;
 }
+
 li:nth-child(2n) {
     background-color: var(--muted-black);
 }
 
-li:last-of-type {
-    border-bottom: 0px !important;
-}
 li:hover .delete {
     opacity: 1;
 }
@@ -60,5 +58,5 @@ input {
 }
 
 #todoInput:focus {
-    outline: 1px solid rgb(226, 195, 18);
+    outline: 1px solid rgb(58, 132, 243);
 }
